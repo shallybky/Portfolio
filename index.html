@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Shally Bakayoko</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Mon profil</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projects">Projet</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Shally Bakayoko</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Mon profil</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projet</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpeg" alt="shally profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour je suis</p>
+        <h1 class="title">Shally Bakayoko</h1>
+        <p class="section__text__p2">Dev Web & Cheffe de projet digital</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.PRO.pdf')"
+          >
+            Download CV
+          </button>
+         
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/shally-bakayoko-225sb1104/'"/>
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/shallybky'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">En savoir plus</p>
+      <h1 class="title">Mon profil</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/office.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Expérience</h3>
+              <p>Frontend Development<br/>Gestion de Projets Digitaux</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Formations</h3>
+              <p>Bac +2 — Développeuse Web<br />Bac +3 — Chef de Projet Digital</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Passionnée par le numérique depuis plus de 4 ans, je combine aujourd’hui mes compétences en développement web et en gestion de projet digital pour concevoir des solutions digitales de A à Z. Du cahier des charges à la mise en ligne, je conçois et développe des sites internet, tout en pilotant les projets avec méthode et créativité.
+            </p>
+          </div>
+        </div>
+      </div>
+     <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"/>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explorez</p>
+      <h1 class="title">Expérience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Langages, Frameworks et Technologie</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Php</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Méthodes, Outils et Gestion de Projets</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Agile / Scrum</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Trello</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Office</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma / Photoshop</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+
+   <section id="projects">
+  <p class="section__text__p1">Parcourir mes récents</p>
+  <h1 class="title">Projets</h1>
+
+  <div class="projects-carousel">
+    <!-- Flèche gauche -->
+    <button class="projects-nav projects-prev" aria-label="Projets précédents" type="button">
+      <svg width="28" height="28" viewBox="0 0 24 24">
+        <path d="M15 18l-6-6 6-6" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Projet 1 -->
+        <div class="swiper-slide">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/carducci.site.png" alt="Project 1" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Nina Carducci</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/shallybky/Nina-carducci.git'">Git</button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://nina-carducci-photographe.netlify.app/'">Aperçu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="swiper-slide">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/ohmyfood.siteP.png" alt="Project 2" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Ohmyfood</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/shallybky/OhmyFood.git'">Git</button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://shallybky.github.io/OhmyFood/'">Aperçu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="swiper-slide">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/bambou.site.png" alt="Project 3" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">La Bambouseraie</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.canva.com/design/DAGvNmuWmY4/XPugGGcIUSEgkEh8GPPBGQ/view'">Aperçu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="swiper-slide">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/booki.site.png" alt="Project 4" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Booki</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+               onclick="location.href='https://github.com/shallybky/Booki.git'">Git</button>
+              <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://shallybky.github.io/Booki/'">Aperçu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 5 -->
+        <div class="swiper-slide">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/kasa.site.png" alt="Project 5" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Kasa</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/shallybky/Kasa.git'">Git</button>
+              <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://kasa-fawn.vercel.app/'">Aperçu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 6 -->
+        <div class="swiper-slide">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/724.site.png" alt="Project 6" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">724Events</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/shallybky/724events.git'">Git</button>
+              <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://724events-eight.vercel.app/'">Aperçu</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Flèche droite -->
+    <button class="projects-nav projects-next" aria-label="Projets suivants" type="button">
+      <svg width="28" height="28" viewBox="0 0 24 24">
+        <path d="M9 6l6 6-6 6" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+</section>
+
+
+    <section id="contact">
+      <p class="section__text__p1">Entrer en contact</p>
+      <h1 class="title">Contactez-moi</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">bakayoko.shally.b@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/shally-bakayoko-225sb1104/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Bakayoko Shally. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
